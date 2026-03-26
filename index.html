@@ -1592,9 +1592,44 @@
     @media (max-width: 600px) {
       .section-pad { padding: 56px 0; }
 
-      .hero-ctas {
+      /* Hero — reducir espaciado vertical */
+      .hero { padding-top: 70px; }
+      .hero-content { padding: 28px 0 28px; }
+
+      .eyebrow {
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        line-height: 1.6;
+        margin-bottom: 16px;
+      }
+
+      /* Countdown — apilar label encima de números */
+      .countdown-hero {
         flex-direction: column;
         align-items: flex-start;
+        gap: 6px;
+        margin-bottom: 18px;
+      }
+
+      .cd-num { font-size: 20px; }
+
+      .hero-headline { margin-bottom: 14px; }
+
+      .hero-sub {
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+
+      .hero-proof {
+        gap: 8px 0;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+
+      .hero-ctas {
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 20px;
       }
 
       .hero-ctas .btn {
@@ -1602,6 +1637,16 @@
         text-align: center;
       }
 
+      .hero-guarantee {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-top: 12px;
+        flex-wrap: wrap;
+      }
+
+      /* Ocultar ola decorativa y scroll indicator en mobile — ahorran espacio */
+      .hero-wave { display: none; }
+      .scroll-indicator { display: none; }
 
       .faq-question { padding: 18px 20px; }
       .faq-item.open .faq-answer { padding: 0 20px 18px; }
@@ -1612,13 +1657,14 @@
     ===================== */
     @media (max-width: 420px) {
       .container { padding: 0 16px; }
-      .hero-content { padding: 56px 0 40px; }
-      .eyebrow { letter-spacing: 0.1em; font-size: 11px; }
-      .hero-headline { font-size: clamp(30px, 9vw, 42px); }
+      .hero { padding-top: 64px; }
+      .hero-content { padding: 20px 0 24px; }
+      .eyebrow { letter-spacing: 0.08em; font-size: 10px; }
+      .hero-headline { font-size: clamp(28px, 8.5vw, 38px); }
       .section-pad { padding: 48px 0; }
       .aprender-card { padding: 28px 20px; }
       .transform-card { padding: 24px 20px; }
-      .hero-ctas .btn { padding: 14px 20px; font-size: 15px; }
+      .hero-ctas .btn { padding: 15px 20px; font-size: 14px; }
       .sintoma-card { padding: 24px 20px; }
       .precio-card { padding: 30px 24px; }
       .super-bono { padding: 24px 20px; }
